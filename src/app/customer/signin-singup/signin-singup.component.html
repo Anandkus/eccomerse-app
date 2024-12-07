@@ -1,0 +1,140 @@
+<div class="jumbotrom-div">
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 " *ngIf="regForm">
+                <h2>Registration Form </h2>
+                <form [formGroup]="signUpForm" (ngSubmit)="onSubmitSignUp()">
+                    <div class="form-group">
+                        <label>enter your name</label>
+                        <input type="text" class="form-control" formControlName="name">
+                    </div>
+                    <div class="form-group">
+                        <label>enter your mobileNo</label>
+                        <input type="text" class="form-control" formControlName="mobileNo">
+                    </div>
+                    <div class="form-group">
+                        <label>enter your age </label>
+                        <input type="text" class="form-control" formControlName="age">
+                    </div>
+                    <div class="form-group">
+                        <label>enter your DOB </label>
+                        <input type="date" class="form-control" formControlName="dob">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>enter your email </label>
+                            <input type="email" class="form-control" formControlName="email"
+                                placeholder="abc@gmail.com">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>enter password </label>
+                            <input type="password" class="form-control" formControlName="password"
+                                placeholder="password">
+                        </div>
+                        <div class="form-group ">
+                            <label>enter address </label>
+                            <input type="text" class="form-control" formControlName="addLine1" placeholder="abcd">
+                        </div>
+                        <div class="form-group ">
+                            <label>enter address 2 </label>
+                            <input type="text" class="form-control" formControlName="addLine2" placeholder="abcd">
+                        </div>
+                        <div class="form-group ">
+                            <label>enter city </label>
+                            <input type="text" class="form-control" formControlName="city" placeholder="city..">
+                        </div>
+                        <div class="form-group col-md-3 ">
+                            <label>enter state </label>
+                            <select formControlName="state" class="form-select">
+                                <option value="">select</option>
+                                <option value="madhya pradesh">madhya pradesh</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3 ">
+                            <label>enter zipcode </label>
+                            <input type="number" class="form-control" formControlName="zipcode">
+                        </div>
+                        <div class="form-group  ">
+                            <label>enter language </label>
+                            <select formControlName="language" class="form-select">
+                                <option value="">select</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="English">English</option>
+                                <option value="Telgu">Telgu</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>select gender </label>
+                            <div class="d-flex gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="male"
+                                        formControlName="gender">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        male
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="female"
+                                        formControlName="gender">
+                                    <label class="form-check-label">
+                                        female
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label>something about you </label>
+                            <textarea class="form-control" formControlName="aboutyou"></textarea>
+                        </div>
+                        <div class="form-group ">
+                            <label>upload your photo </label>
+                            <input type="file" class="form-control" formControlName="uploadphoto" placeholder="delhi">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" formControlName="agreetc">
+                                <label class="form-check-label">
+                                    terms and conditons
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group  ">
+                            <label>what do you want ? </label>
+                            <select formControlName="role" class="form-select">
+                                <option value="">select</option>
+                                <option value="seller">seller</option>
+                                <option value="buyer">buyer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-2 text-end">
+                        <button type="submit" class="btn btn-primary" >Submit</button>
+                    </div>
+                </form>
+                <p class="sim-pointer">you have an account pls click here to <a routerLink="/sign-in">login</a></p>
+            </div>
+            <div class="col-md-6 offset-md-3 " *ngIf="!regForm">
+                <h2>Login Form </h2>
+                <form [formGroup]="singInForm" (ngSubmit)="onSubmitSignIn()">
+                    <div class="form-row">
+                        <div class="form-group ">
+                            <label>enter your email </label>
+                            <input type="email" class="form-control" placeholder="abc@gmail.com"
+                                formControlName="email">
+                        </div>
+                        <div class="form-group ">
+                            <label>enter password </label>
+                            <input type="password" class="form-control" placeholder="password" formControlName="password">
+                        </div>
+                        <div class=" mt-2 text-end">
+                            <button type="submit" class="btn btn-primary" [disabled]="!singInForm.valid">Submit</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="sim-pointer">you don't have an account pls click here to <a routerLink="/sign-up">register</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

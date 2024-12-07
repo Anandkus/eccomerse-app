@@ -1,0 +1,114 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <form [formGroup]="userProfileForm">
+                <div class="form-group">
+                    <label>enter your name</label>
+                    <input type="text" class="form-control" formControlName="name">
+                </div>
+                <div class="form-group">
+                    <label>enter your mobileNo</label>
+                    <input type="text" class="form-control" formControlName="mobileNo">
+                </div>
+                <div class="form-group">
+                    <label>enter your age </label>
+                    <input type="text" class="form-control" formControlName="age">
+                </div>
+                <div class="form-group">
+                    <label>enter your DOB </label>
+                    <input type="date" class="form-control" formControlName="dob">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>enter your email </label>
+                        <input type="email" class="form-control" formControlName="email" placeholder="abc@gmail.com">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>enter password </label>
+                        <input type="password" class="form-control" formControlName="password" placeholder="password">
+                    </div>
+                    <div class="form-group ">
+                        <label>enter address </label>
+                        <input type="text" class="form-control" formControlName="addLine1" placeholder="abcd">
+                    </div>
+                    <div class="form-group ">
+                        <label>enter address 2 </label>
+                        <input type="text" class="form-control" formControlName="addLine2" placeholder="abcd">
+                    </div>
+                    <div class="form-group ">
+                        <label>enter city </label>
+                        <input type="text" class="form-control" formControlName="city" placeholder="city..">
+                    </div>
+                    <div class="form-group col-md-3 ">
+                        <label>enter state </label>
+                        <select formControlName="state" class="form-select">
+                            <option value="">select</option>
+                            <option value="MP">MP</option>
+                            <option value="UP">UP</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3 ">
+                        <label>enter zipcode </label>
+                        <input type="number" class="form-control" formControlName="zipcode">
+                    </div>
+                    <div class="form-group  ">
+                        <label>enter language </label>
+                        <select formControlName="language" class="form-select">
+                            <option value="">select</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="English">English</option>
+                            <option value="Telgu">Telgu</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>select gender </label>
+                        <div class="d-flex gap-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="male" formControlName="gender">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="female" formControlName="gender">
+                                <label class="form-check-label">
+                                    female
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label>something about you </label>
+                        <textarea class="form-control" formControlName="aboutyou"></textarea>
+                    </div>
+                    <div class="form-group ">
+                        <label>upload your photo </label><br>
+                        <!-- <span>{{user_profile_pic}}</span> -->
+                        <input type="file" class="form-control" formControlName="uploadphoto" placeholder="delhi">
+                    </div>
+                    <!-- <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" formControlName="agreetc">
+                            <label class="form-check-label">
+                                terms and conditons
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group  ">
+                        <label>what do you want ? </label>
+                        <select formControlName="role" class="form-select">
+                            <option value="">Select</option>
+                            <option value="admin">Admin</option>
+                            <option value="seller">Seller</option>
+                            <option value="buyer">Buyer</option>
+                        </select>
+                    </div> -->
+                </div>
+                <div class="mt-2 text-end">
+                    <button type="submit" class="btn btn-primary" (click)="updateUser()">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,236 @@
+{
+  "users": [
+    {
+      "name": "Anand Kushwaha",
+      "mobileNo": "087588765",
+      "age": "22",
+      "dob": "2024-12-19",
+      "email": "anand190@gmail.com",
+      "password": "12345",
+      "address": {
+        "id": 0,
+        "addLine1": "Hinotia",
+        "addLine2": "Nera-janak hospital gwalior",
+        "city": "Datia",
+        "state": "MP",
+        "zipcode": 475685
+      },
+      "language": "Hindi",
+      "gender": "male",
+      "aboutyou": "i am programmer",
+      "uploadphoto": "C:\\fakepath\\welcome.jpg",
+      "agreetc": true,
+      "role": "admin",
+      "id": "14a6"
+    },
+    {
+      "name": "shivamKushwaha",
+      "mobileNo": "06876509870",
+      "age": "22",
+      "dob": "2024-12-19",
+      "email": "shivam@gmail.com",
+      "password": "54321",
+      "address": {
+        "id": 0,
+        "addLine1": "Janak Hospital Roxy Pul Kampoo",
+        "addLine2": "Nera-janak hospital gwalior",
+        "city": "Gwalior",
+        "state": "MP",
+        "zipcode": 474009
+      },
+      "language": "English",
+      "gender": "male",
+      "aboutyou": "i am programmer",
+      "uploadphoto": "C:\\fakepath\\profile (1).jpg",
+      "agreetc": true,
+      "role": "buyer",
+      "id": "fd29"
+    },
+    {
+      "name": "raj patel",
+      "mobileNo": "45234234",
+      "age": "22",
+      "dob": "2002-02-11",
+      "email": "anandkus2343@gmail.com",
+      "password": "123",
+      "address": {
+        "id": 0,
+        "addLine1": "Village-hidora",
+        "addLine2": "Village--hidora(badoni",
+        "city": "Datia",
+        "state": "MP",
+        "zipcode": 475685
+      },
+      "language": "English",
+      "gender": "male",
+      "aboutyou": "full stack developer",
+      "uploadphoto": "C:\\fakepath\\profile.jpg",
+      "agreetc": true,
+      "role": "seller",
+      "id": "5e0a"
+    }
+  ],
+  "product": [
+    {
+      "id": "1",
+      "name": "jeans",
+      "uploadphoto": "https://m.media-amazon.com/images/I/61s8sqSaqNL._SY879_.jpg",
+      "desc": "Jack & Jones Mens Ray Boot Cut High-Rise Jeans Jack & Jones Mens Ray Boot Cut High-Rise Jeans Jack & Jones Mens Ray Boot Cut High-Rise JeansJack & Jones Mens Ray Boot Cut High-Rise JeansJack & Jones Mens Ray Boot Cut High-Rise Jeans",
+      "mrp": "2,799",
+      "dp": "1,799",
+      "status": "publish"
+    },
+    {
+      "id": "2",
+      "name": "jeans blue",
+      "uploadphoto": "https://m.media-amazon.com/images/I/61PIAyOPNaL._SY741_.jpg",
+      "desc": "JLondon Hills Men Jeans || Relaxed Pants || Denim Baggy Jeans",
+      "mrp": "4,799",
+      "dp": "1599",
+      "status": "publish"
+    },
+    {
+      "id": "4",
+      "name": "Shirt",
+      "uploadphoto": "https://m.media-amazon.com/images/I/61ziqugR5QL._SX679_.jpg",
+      "desc": "MUFTI Mens Slim Fit Shirt",
+      "mrp": "4,799",
+      "dp": "649",
+      "status": "publish"
+    },
+    {
+      "id": "5",
+      "name": "Modem Router",
+      "uploadphoto": "https://m.media-amazon.com/images/I/61YZJsvr7SL._SX679_.jpg",
+      "desc": "Sounce Cat6 Ethernet Cable, 10-Meter-High Speed 550MHZ / 10 Gigabit Speed UTP LAN Cable Network Cable Internet Cable RJ45 Cable LAN Wire, Patch Computer Cord Gigabit Category 6",
+      "mrp": 209,
+      "dp": 150,
+      "status": "inactive"
+    },
+    {
+      "id": "6",
+      "name": "Dry Iron ",
+      "uploadphoto": "https://m.media-amazon.com/images/I/61qgKaW71mL._SX679_.jpg",
+      "desc": "Bajaj DX-6 1000W Dry Iron with Advance Soleplate and Anti-bacterial German Coating Technology, White",
+      "mrp": 620,
+      "dp": "520",
+      "status": "draft"
+    },
+    {
+      "id": "8",
+      "name": "Light Modes (Black)",
+      "uploadphoto": "https://m.media-amazon.com/images/I/41z-J9nwsuL._AC_UL480_FMwebp_QL65_.jpg",
+      "desc": "IBELL FL8375S Rechargeable Torch, Powerbank Function, Aircraft Aluminum Body, Telescopic Zoom, Water Resistant Flashlight with Multiple Light Modes (Black)",
+      "mrp": "1234",
+      "dp": "3442",
+      "status": "inactive"
+    },
+    {
+      "id": "0.5652814141940008",
+      "name": "Tablets - Black",
+      "uploadphoto": "https://m.media-amazon.com/images/I/61RGJpcuU0L._SY679_.jpg",
+      "desc": "Metal Phone Stand for Mobile Phones and Tablets\nSHINING BLACK METAL IPHONE STAND : Shining black metal iphone stand,with lightweight and the ipad stand is portable and edgy,it perfectly work with iphone.\nPHONE DESK STAND : Phone desk stand is universal perfectly compatible with as majority of smartphones and tablets,such as iphone ipad mini, Although with case,when using an iPad, you should set it horizontally,it will also works well.\nPERFECT FOR WATCHING MOVIES & READING : Cell phone stand perfect for desk or table to watch movies, read etc. sync charging your phone. Angled Support for Facetime\nRUBBER PROTECTED : The rubber protect the point of contact between the device and the stand keep your device from scratches and sliding.\nMODERATE HEIGHT : The height of hooks to bottom is moderate to charge your device, Also keep the low gravity center.",
+      "mrp": "5777",
+      "dp": "899",
+      "status": "publish"
+    }
+  ],
+  "order": [
+    {
+      "id": "1",
+      "userid": 3,
+      "sellerid": 4,
+      "product": {
+        "id": 1,
+        "name": "jeans",
+        "uploadphoto": "jeans.png",
+        "desc": "this is amazing product",
+        "mrp": "456",
+        "dp": "200",
+        "status": "publish"
+      },
+      "deliveryaddress": {
+        "id": 0,
+        "addLine1": "distic center",
+        "addLine2": "janak puri",
+        "city": "New delhi",
+        "state": "delhi",
+        "zipcode": "110052"
+      },
+      "contact": "8779423432",
+      "dateTime": "19/03/24"
+    },
+    {
+      "id": "0",
+      "userid": "fd29",
+      "sellerid": 2,
+      "product": {
+        "id": "1",
+        "name": "jeans",
+        "uploadphoto": "https://m.media-amazon.com/images/I/61s8sqSaqNL._SY879_.jpg",
+        "desc": "Jack & Jones Mens Ray Boot Cut High-Rise Jeans Jack & Jones Mens Ray Boot Cut High-Rise Jeans Jack & Jones Mens Ray Boot Cut High-Rise JeansJack & Jones Mens Ray Boot Cut High-Rise JeansJack & Jones Mens Ray Boot Cut High-Rise Jeans",
+        "mrp": "2,799",
+        "dp": "1,799",
+        "status": "publish"
+      },
+      "deliveryaddress": {
+        "id": 0,
+        "addLine1": "Janak Hospital Roxy Pul Kampoo",
+        "addLine2": "Nera-janak hospital gwalior",
+        "city": "Gwalior",
+        "state": "MP",
+        "zipcode": 474009
+      },
+      "contact": "0622675935",
+      "dateTime": "2024-12-04T09:18:41.884Z"
+    },
+    {
+      "id": "0",
+      "userid": "fd29",
+      "sellerid": 2,
+      "product": {
+        "id": "1",
+        "name": "jeans",
+        "uploadphoto": "https://m.media-amazon.com/images/I/61s8sqSaqNL._SY879_.jpg",
+        "desc": "Jack & Jones Mens Ray Boot Cut High-Rise Jeans Jack & Jones Mens Ray Boot Cut High-Rise Jeans Jack & Jones Mens Ray Boot Cut High-Rise JeansJack & Jones Mens Ray Boot Cut High-Rise JeansJack & Jones Mens Ray Boot Cut High-Rise Jeans",
+        "mrp": "2,799",
+        "dp": "1,799",
+        "status": "publish"
+      },
+      "deliveryaddress": {
+        "id": 0,
+        "addLine1": "Janak Hospital Roxy Pul Kampoo",
+        "addLine2": "Nera-janak hospital gwalior",
+        "city": "Gwalior",
+        "state": "MP",
+        "zipcode": 474009
+      },
+      "contact": "06265643935",
+      "dateTime": "2024-12-04T09:37:12.854Z"
+    },
+    {
+      "id": "0",
+      "userid": "fd29",
+      "sellerid": 2,
+      "product": {
+        "id": "0.4050057860814893",
+        "name": "Hoodie",
+        "uploadphoto": "https://monarchmodecentral.com/cdn/shop/files/UBodman17291.jpg?v=1731665920&width=823",
+        "desc": "Hoodie - 'Petty Betty Wit Da Machete'",
+        "mrp": "567",
+        "dp": "399",
+        "status": "publish"
+      },
+      "deliveryaddress": {
+        "id": 0,
+        "addLine1": "Janak Hospital Roxy Pul Kampoo",
+        "addLine2": "Nera-janak hospital gwalior",
+        "city": "Gwalior",
+        "state": "MP",
+        "zipcode": 474009
+      },
+      "contact": "0645358765",
+      "dateTime": "2024-12-06T09:49:01.623Z"
+    }
+  ]
+}

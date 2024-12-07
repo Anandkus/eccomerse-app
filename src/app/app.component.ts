@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'eccomerse-app';
+  screenHeight: any;
+  screenWidth: any;
+  footerMaxHeight!: number;
+
+  constructor() {
+    this.getScreen()
+  }
+
+  @HostListener("window:resize", ['$evnet'])
+  getScreen() {
+    this.screenHeight = window.innerHeight;
+    this.screenWidth = window.innerWidth;
+    this.footerMaxHeight = this.screenHeight - 160;
+  }
 }
